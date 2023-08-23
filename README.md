@@ -15,23 +15,11 @@ The azurerm_key_vault_access_policy is conditional and will be created/added to 
 The monitor diagnostics capabilities can be turned on by diagnostics variable
 
 
-How to call the main module in your IAC code in the cloud
-```terraform
-module {
-    source = "rghosh/key-vault/azurerm"
-    version = "1.0.0"
-}
 
-inputs {
-    name = "simple"
-    resource_group_name = "simple-kv-rg"
-    location = "eastus"
-}
-```
 How to call the main module in your IAC code locally
 It is recommended the to assign access using the `access_policies`variable.
 
-```terraform
+
 module {
     source = "rghosh/key-vault/azurerm"
     version = "1.0.0"
