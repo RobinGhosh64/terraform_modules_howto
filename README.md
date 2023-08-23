@@ -17,7 +17,7 @@ The caller is an example in the example\simple folder. To test you need to be in
 
 
 How to call the main module from your IAC code in the cloud 
-
+```terraform
 module {
     source = "rghosh/key-vault/azurerm"
     version = "1.0.0"
@@ -38,3 +38,19 @@ inputs {
         }
     ]
 }
+```
+
+How to call the main module from your IAC code locally for a quick test
+```terraform
+module {
+    source = "../../"
+    version = "1.0.0"
+}
+
+inputs {
+    name = "simple"
+    resource_group_name = "simple-kv-rg"
+    location = "eastus"
+
+}
+```
