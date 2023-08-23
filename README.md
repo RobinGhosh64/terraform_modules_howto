@@ -10,7 +10,7 @@ The key vault name is post fixed with -kv    ex. {name}-kv
 The caller is an example in the example\simple folder. To test you need to be in that folder.
 
 
--- The azurerm_key_vault_access_policy is conditional and will be created/added to the keyy_vault VIA 'access_policies' attribute and can be passed directly from the caller as input/ but optional
+-- The azurerm_key_vault_access_policy is conditional and will be created/added to the key_vault VIA 'access_policies' attribute that can be passed directly from the caller as input. This is optional.
 
 
 -- The monitor diagnostics capabilities can be turned on by diagnostics variable
