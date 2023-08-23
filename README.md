@@ -5,20 +5,18 @@ How to write a terraform module, that is easily callable by another caller modul
 The root folder of this project has the main terraform module that creates a resource, key_vault and key_vault_access_policy.
 It has variables.tf for variables it needs, some of which are defaults.
 
-The Key_vault_name is post fixed with {name}-kv
+The key vault name is post fixed with -kv    ex. {name}-kv
 
-The caller is an example in the exampe
-
-The azurerm_key_vault_access_policy is conditional and will be created/added to the keyy_vault VIA access_policies attribute and can be passed directly from the caller as input/ but optional
+The caller is an example in the example\simple folder. To test you need to be in that folder.
 
 
-The monitor diagnostics capabilities can be turned on by diagnostics variable
+-- The azurerm_key_vault_access_policy is conditional and will be created/added to the keyy_vault VIA 'access_policies' attribute and can be passed directly from the caller as input/ but optional
 
 
+-- The monitor diagnostics capabilities can be turned on by diagnostics variable
 
-How to call the main module in your IAC code locally
-It is recommended the to assign access using the `access_policies`variable.
 
+How to call the main module from your IAC code in the cloud 
 
 module {
     source = "rghosh/key-vault/azurerm"
@@ -40,4 +38,3 @@ inputs {
         }
     ]
 }
-```
