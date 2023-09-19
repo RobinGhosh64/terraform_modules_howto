@@ -15,7 +15,7 @@ The calling program is an example in the example\simple folder.
 
 
 
-<BOLD>How will you call the main module from your IAC code in the cloud?</BOLD>
+## How will you call the main module from your IAC code in the cloud?
 
 
 
@@ -27,4 +27,4 @@ The calling program is an example in the example\simple folder.
 
 
 
-<BOLD>How will you call the main module from your local?  Also, i want to pass in my access_policies.</BOLD>
+## How will you call the main module from your local?  This time I want to pass in my access_policies.
